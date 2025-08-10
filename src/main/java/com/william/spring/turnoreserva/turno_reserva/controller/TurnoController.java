@@ -40,6 +40,13 @@ public class TurnoController {
         return servicioRepository.findByComercioIdComercio(idComercio);
     }
 
+    @GetMapping("/existentes")
+    public List<Turno> getTurnosExistentes() {
+    return turnoService.obtenerTurnosExistentes();
+}
+
+    
+
 
 
     @PostMapping("/generar")

@@ -60,4 +60,11 @@ public class TurnoServiceImpl implements TurnoService {
 
         return turnosGenerados;
     }
+
+
+    @Override
+    public List<Turno> obtenerTurnosExistentes() {
+        return turnoRepository.findAll();
+        //throw new UnsupportedOperationException("Unimplemented method 'obtenerTurnosExistentes'");
+    }
 }
